@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5E5B5AD130530979006279C0 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 5E5B5AD030530979006279C0 /* Swinject */; };
+		5E756C7C305DDC0F00D801C7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5E756C7B305DDC0F00D801C7 /* FirebaseAnalytics */; };
+		5E756C7E305DDC0F00D801C7 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5E756C7D305DDC0F00D801C7 /* FirebaseCore */; };
+		5E756C80305DDC0F00D801C7 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5E756C7F305DDC0F00D801C7 /* FirebaseCrashlytics */; };
+		5E756C82305DDC0F00D801C7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5E756C81305DDC0F00D801C7 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5EBF5D35305300BC0076B39E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +37,22 @@
 		5EBF5D3E305300BC0076B39E /* HassanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HassanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5EE77AD83054A282000F8FC6 /* Exceptions for "Hassan" folder in "Hassan" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5EBF5D24305300BB0076B39E /* Hassan */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5EBF5D27305300BB0076B39E /* Hassan */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5EE77AD83054A282000F8FC6 /* Exceptions for "Hassan" folder in "Hassan" target */,
+			);
 			path = Hassan;
 			sourceTree = "<group>";
 		};
@@ -52,6 +73,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E756C7C305DDC0F00D801C7 /* FirebaseAnalytics in Frameworks */,
+				5E756C80305DDC0F00D801C7 /* FirebaseCrashlytics in Frameworks */,
+				5E756C7E305DDC0F00D801C7 /* FirebaseCore in Frameworks */,
+				5E756C82305DDC0F00D801C7 /* FirebaseFirestore in Frameworks */,
+				5E5B5AD130530979006279C0 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +98,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E5B5AD3305309D0006279C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5EBF5D1C305300BB0076B39E = {
 			isa = PBXGroup;
 			children = (
 				5EBF5D27305300BB0076B39E /* Hassan */,
 				5EBF5D37305300BC0076B39E /* HassanTests */,
 				5EBF5D41305300BC0076B39E /* HassanUITests */,
+				5E5B5AD3305309D0006279C0 /* Frameworks */,
 				5EBF5D26305300BB0076B39E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +146,11 @@
 			);
 			name = Hassan;
 			packageProductDependencies = (
+				5E5B5AD030530979006279C0 /* Swinject */,
+				5E756C7B305DDC0F00D801C7 /* FirebaseAnalytics */,
+				5E756C7D305DDC0F00D801C7 /* FirebaseCore */,
+				5E756C7F305DDC0F00D801C7 /* FirebaseCrashlytics */,
+				5E756C81305DDC0F00D801C7 /* FirebaseFirestore */,
 			);
 			productName = hassanios;
 			productReference = 5EBF5D25305300BB0076B39E /* Hassan.app */;
@@ -192,9 +231,14 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 5EBF5D1C305300BB0076B39E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5E5B5ACF30530979006279C0 /* XCRemoteSwiftPackageReference "Swinject" */,
+				5E756C7A305DDC0F00D801C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5EBF5D26305300BB0076B39E /* Products */;
 			projectDirPath = "";
@@ -400,18 +444,19 @@
 				DEVELOPMENT_TEAM = R8SRMT4A39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hassan/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Hassan;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hassan.hassanios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hassan.hassanapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -429,18 +474,19 @@
 				DEVELOPMENT_TEAM = R8SRMT4A39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hassan/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Hassan;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hassan.hassanios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hassan.hassanapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -560,6 +606,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E5B5ACF30530979006279C0 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.0;
+			};
+		};
+		5E756C7A305DDC0F00D801C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E5B5AD030530979006279C0 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E5B5ACF30530979006279C0 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		5E756C7B305DDC0F00D801C7 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E756C7A305DDC0F00D801C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		5E756C7D305DDC0F00D801C7 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E756C7A305DDC0F00D801C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		5E756C7F305DDC0F00D801C7 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E756C7A305DDC0F00D801C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		5E756C81305DDC0F00D801C7 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E756C7A305DDC0F00D801C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5EBF5D1D305300BB0076B39E /* Project object */;
 }
