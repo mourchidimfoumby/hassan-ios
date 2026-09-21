@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  Hassan
+
+  Created by Mourchidi Mfoumby on 10/09/2026.
+  
+*/
+
+"quran" = "Quran";
+"surah" = "Surah";
+"juz" = "Juz";
+"hizb" = "Hizb";
+"lastRead" = "Last read";
+"verse" = "Verse";
+"allSurah" = "All surah";
+"allJuz" = "All juz";
+"allHizb" = "All hizb";
+
+"filterQuranView" = "Filter quran view";

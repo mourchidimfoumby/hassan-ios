@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23788.4" systemVersion="24G84" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="LocalHizbModel" representedClassName="LocalHizbModel" syncable="YES" codeGenerationType="class">
+        <attribute name="hizbFirstSurah" optional="YES" attributeType="String"/>
+        <attribute name="hizbFirstVerse" optional="YES" attributeType="String"/>
+        <attribute name="hizbNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="LocalJuzModel" representedClassName="LocalJuzModel" syncable="YES" codeGenerationType="class">
+        <attribute name="juzFirstSurah" optional="YES" attributeType="String"/>
+        <attribute name="juzFirstVerse" optional="YES" attributeType="String"/>
+        <attribute name="juzNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="LocalSurahModel" representedClassName="LocalSurahModel" syncable="YES" codeGenerationType="class">
+        <attribute name="surahName" optional="YES" attributeType="String"/>
+        <attribute name="surahNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="surahTotalVerses" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="surahTranslation" optional="YES" attributeType="String"/>
+        <attribute name="surahTransliteration" optional="YES" attributeType="String"/>
+        <attribute name="surahType" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="LocalVerseModel" representedClassName="LocalVerseModel" syncable="YES" codeGenerationType="class">
+        <attribute name="verseHizbNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="verseJuzNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="verseNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="versePage" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="verseSurahNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="verseText" optional="YES" attributeType="String"/>
+        <attribute name="verseTransliteration" optional="YES" attributeType="String"/>
+    </entity>
+</model>
